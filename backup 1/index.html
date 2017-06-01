@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<script type="text/javascript">
+	level=0;
+</script>
+<html>
+<head>
+	<title>Adventuregame</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<body>
+		<div id="titlebalk"><img src="kasteel00.jpg" height="100px"><img src="Titel kasteel.png" height="100px"><img src="uil.jpg" width="100px" height="100px">
+
+			<p id="levelnummer"></p>
+
+				<script>
+				document.getElementById("levelnummer").innerHTML = "je zit nu in " +
+				"level";
+				</script>
+
+		</div>
+
+
+			<div id="foto"> 
+			<img id="kasteel" src=kasteel0.gif height="650px">
+			</div>
+
+
+
+
+							<script src="game.js"></script>
+
+				<button id=vorig onclick=naarvorig() hidden=true> Vorige kamer </button>
+				<button id=volgend style="float: right;" onclick=naarvolgend()  >Klik om te starten </button>
+			
+		<img  id=uiltje onclick=uilinv() onmouseover=uilmov() src="uil.jpg" height="100" hidden=false style="blink" display=>
+
+			<div id="inventory">
+			<img src="rugzak.jpg" height="150">
+			<img id=invuil src="uil.jpg" height="150" hidden=false>
+			</div>
+	</body>
+</html>
