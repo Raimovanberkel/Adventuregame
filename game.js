@@ -93,13 +93,17 @@ console.log("actueellevel " + level);
 			}
 		}
 
+		if (level==1) {
+		document.getElementById("sleutel").style.visibility="visible";	
+		}
+
 kamer = [
 		"Het Kasteel",
 		"Torenkamer", 
-		"Eerste trappenhuis", 
+		"1e trappenhuis", 
 		"Overloop", 
 		"Zitkamer",
-		"Tweede Trappenhuis",
+		"2e Trappenhuis",
 		"Souterrain",
 		"Kelder",
 		"Uitgang",
@@ -110,7 +114,7 @@ kamer = [
 		"Kerker",
 		"Oeps gaat niet verder" ];
 
-document.getElementById("levelnummer").innerHTML = "Huidige locatie: "  + kamer[level];
+document.getElementById("levelnummer").innerHTML = "Jouw locatie: "  + kamer[level];
 
 console.log (meldp(level)+" en "+meldn(level) +" "+"kasteel"+level+".gif" )
 document.getElementById("vorig").innerHTML = meldp(level);
@@ -148,4 +152,21 @@ document.getElementById("uiltje").style.visibility="visible";
 function uildbl(){
 document.getElementById("uiltje").style.visibility="visible";
 document.getElementById("invuil").style.visibility="hidden";
+}
+
+
+
+function sleutelinv(){
+document.getElementById("sleutel").style.visibility="hidden";
+document.getElementById("invsleutel").style.visibility="visible";
+}
+
+
+function sleutelmov(){
+document.getElementById("sleutel").style.visibility="visible";
+}
+
+function sleuteldbl(){
+document.getElementById("sleutel").style.visibility="visible";
+document.getElementById("invsleutel").style.visibility="hidden";
 }

@@ -11,12 +11,13 @@
 		<div id="titlebalk">
 		<img src="kasteel00.jpg" height="100px">
 		<img src="Titel kasteel.png" style="width: 450px;height: 100px">
-		<img  id=uiltje onclick=uilinv() onmouseover=uilmov() onclick=uilinv() src="uil.jpg" style="height: 100px">
-		<h1 id="levelnummer" style="margin-top: 0px;float: right; padding-right: 875px;padding-top: 35px;font-size: 25px;"> Huidige locatie: Het Kasteel</h1>
+		<img  id=uiltje onclick=uilinv() onmouseover=uilmov() src="uil.jpg" style="height: 100px">
+		<h1 id="levelnummer" style="margin-top: 0px;float: right; padding-right: 875px;padding-top: 0px;font-size: 25px;">Jouw locatie: Het Kasteel</h1>
 		</div>
 
 
 			<div id="foto"> 
+			<img  id=sleutel onclick=sleutelinv() onmouseover=sleutelmov() src="sleutel.png" style="height: 50px;visibility: hidden;">
 			<img id="kasteel" src=kasteel0.gif height="650px">
 			<script src="game.js"></script>
 
@@ -30,6 +31,7 @@
 		<div id="inventory">
 			<img src="rugzak.jpg" height="150">
 			<img id=invuil ondblclick=uildbl() src="uil.jpg" height="150" style="visibility:hidden">
+			<img id=invsleutel ondblclick=sleuteldbl() src="sleutel.png" height="150" style="visibility:hidden">
 		</div>
 	</body>
 </html>

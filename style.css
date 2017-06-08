@@ -33,3 +33,10 @@ background-color: white;
 position: fixed;
 }
 
+#sleutel{
+	    position: absolute;
+    left: 1210px;
+    top: 535px;
+
+    z-index: 1;
+}
