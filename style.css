@@ -8,7 +8,6 @@ body{background-image: url("muur.jpg");
 height: 100px;
 width: 100%;
 background-color: white;
-font-size: 40px;
 position: center;
 margin-top: 0px;
 }
@@ -20,9 +19,10 @@ margin-left: 450px;
 height: 450px;}
 
 p{
-font-size: 25px;
+font-size: 20px;
 }
 
+h1{font-size: 20px;}
 
 #inventory{
 padding-top: 0px;

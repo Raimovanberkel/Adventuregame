@@ -8,30 +8,28 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 	<body>
-		<div id="titlebalk"><img src="kasteel00.jpg" height="100px"><img src="Titel kasteel.png" height="100px"><img src="uil.jpg" width="100px" height="100px">
-
-			<p id="levelnummer"> Huidige locatie: Het Kasteel</p>
-
+		<div id="titlebalk">
+		<img src="kasteel00.jpg" height="100px">
+		<img src="Titel kasteel.png" style="width: 450px;height: 100px">
+		<img  id=uiltje onclick=uilinv() onmouseover=uilmov() onclick=uilinv() src="uil.jpg" style="height: 100px">
+		<h1 id="levelnummer" style="margin-top: 0px;float: right; padding-right: 875px;padding-top: 0px;font-size: 25px;"> Huidige locatie: Het Kasteel</h1>
 		</div>
 
 
 			<div id="foto"> 
 			<img id="kasteel" src=kasteel0.gif height="650px">
-			</div>
+			<script src="game.js"></script>
 
+				<button id=vorig style="visibility: hidden; float: left" onclick=naarvorig()> Groene deur </button>
+				<button id=volgend style="float: right; visibility: visible" onclick=naarvolgend()>Klik om te gaan starten </button>
+				<button id=extra1 style="float:right; visibility: hidden;" onclick=naarextra1()> Gele deur </button>
+				<button id=extra2 style="float:left; visibility: hidden;" onclick=naarextra2()> Rode deur </button>
+		
+		</div>
 
-
-
-							<script src="game.js"></script>
-
-				<button id=vorig onclick=naarvorig() hidden=true> Vorige kamer </button>
-				<button id=volgend style="float: right;" onclick=naarvolgend()  >Klik om te starten </button>
-			
-		<img  id=uiltje onclick=uilinv() onmouseover=uilmov() src="uil.jpg" height="100" hidden=false style="blink" display=>
-
-			<div id="inventory">
+		<div id="inventory">
 			<img src="rugzak.jpg" height="150">
-			<img id=invuil src="uil.jpg" height="150" hidden=false>
-			</div>
+			<img id=invuil src="uil.jpg" height="150" style="visibility:hidden">
+		</div>
 	</body>
 </html>
