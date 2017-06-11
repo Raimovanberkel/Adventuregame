@@ -40,3 +40,27 @@ position: fixed;
 
     z-index: 1;
 }
+
+#kaars{
+	    position: absolute;
+    left: 770px;
+    top: 645px;
+
+    z-index: 1;
+}
+
+#mega{
+	    position: absolute;
+    left: 850px;
+    top: 400px;
+
+    z-index: 1;
+}
+
+#mag{
+	    position: absolute;
+    left: 1095px;
+    top: 675px;
+
+    z-index: 1;
+}

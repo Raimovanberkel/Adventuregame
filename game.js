@@ -1,10 +1,22 @@
+	inhrugz=[true,false,true,false,false,false,false,false,false,false,false,true,false,false,false,false,false];
+
+
+
 function naarvolgend()
 {
+
+console.log(inhrugz[level]);
+
+if (inhrugz[level]==true)
+{	  
+
 	if (level==6) {
 		level=13;
-	} else{
-	level=level+1;
-	}
+	} 	else
+	  {
+		level=level+1;
+		}
+
 
 	if (level==11) {
 		level=6;
@@ -13,7 +25,21 @@ function naarvolgend()
 	if (level==12) {
 		level=14;
 	}
-console.log ("van "+level);
+
+
+} else
+{
+alert("Je kunt nog niet verder, misschien mis je nog iets!   :)");
+}
+
+//var volgendknop = document.getElementById('volgend');
+//if (level==0) {
+//	volgendknop.style.visibility=== 'visible';
+//}else{
+//	if (kaars.style.visibility === 'visible'){
+//		volgendknop.style.visibility=== 'visible';
+//	}else{volgendknop.style.visibility==='hidden'}
+ 
 console.log ("naar volgend "+level);
 actueellevel(level);
 }
@@ -93,9 +119,22 @@ console.log("actueellevel " + level);
 			}
 		}
 
+/*voorwerpen*/
 		if (level==1) {
-		document.getElementById("sleutel").style.visibility="visible";	
-		}
+			if (inhrugz[1]==false) {
+				document.getElementById("sleutel").style.visibility="visible";
+			} else {
+				document.getElementById("sleutel").style.visibility="hidden";
+			}
+
+		document.getElementById("kaars").style.visibility="visible";
+		}else{
+		document.getElementById("sleutel").style.visibility="hidden";	
+		document.getElementById("kaars").style.visibility="hidden";}
+
+		if (level==2) {document.getElementById("mega").style.visibility="visible";}else{document.getElementById("mega").style.visibility="hidden";}
+
+		if (level==12) {document.getElementById("mag").style.visibility="visible";}else{document.getElementById("mag").style.visibility="hidden";}
 
 kamer = [
 		"Het Kasteel",
@@ -142,8 +181,8 @@ return tekstmelden[loc];
 function uilinv(){
 document.getElementById("uiltje").style.visibility="hidden";
 document.getElementById("invuil").style.visibility="visible";
+inhrugz[level]=true;
 }
-
 
 function uilmov(){
 document.getElementById("uiltje").style.visibility="visible";
@@ -159,8 +198,8 @@ document.getElementById("invuil").style.visibility="hidden";
 function sleutelinv(){
 document.getElementById("sleutel").style.visibility="hidden";
 document.getElementById("invsleutel").style.visibility="visible";
+inhrugz[1]=true;
 }
-
 
 function sleutelmov(){
 document.getElementById("sleutel").style.visibility="visible";
@@ -170,3 +209,58 @@ function sleuteldbl(){
 document.getElementById("sleutel").style.visibility="visible";
 document.getElementById("invsleutel").style.visibility="hidden";
 }
+
+
+
+function kaarsinv(){
+document.getElementById("kaars").style.visibility="hidden";
+document.getElementById("invkaars").style.visibility="visible";
+inhrugz[9]=true;
+}
+
+
+function kaarsmov(){
+document.getElementById("kaars").style.visibility="visible";
+}
+
+function kaarsdbl(){
+document.getElementById("kaars").style.visibility="visible";
+document.getElementById("invkaars").style.visibility="hidden";
+}
+
+
+
+function megainv(){
+document.getElementById("mega").style.visibility="hidden";
+document.getElementById("invmega").style.visibility="visible";
+inhrugz[3]=true;
+}
+
+
+function megamov(){
+document.getElementById("mega").style.visibility="visible";
+}
+
+function megadbl(){
+document.getElementById("mega").style.visibility="visible";
+document.getElementById("invmega").style.visibility="hidden";
+}
+
+
+
+function maginv(){
+document.getElementById("mag").style.visibility="hidden";
+document.getElementById("invmag").style.visibility="visible";
+inhrugz[12]=true;
+}
+
+
+function magmov(){
+document.getElementById("mag").style.visibility="visible";
+}
+
+function magdbl(){
+document.getElementById("mag").style.visibility="visible";
+document.getElementById("invmag").style.visibility="hidden";
+}
+

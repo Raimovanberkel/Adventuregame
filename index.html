@@ -18,20 +18,25 @@
 
 			<div id="foto"> 
 			<img  id=sleutel onclick=sleutelinv() onmouseover=sleutelmov() src="sleutel.png" style="height: 50px;visibility: hidden;">
+			<img  id=kaars onclick=kaarsinv() onmouseover=kaarsmov() src="kaars.png" style="height: 30px;visibility: hidden;">
+			<img  id=mega onclick=megainv() onmouseover=megamov() src="megafoon.png" style="height: 50px;visibility: hidden;">
+			<img  id=mag onclick=maginv() onmouseover=magmov() src="tijdschrift.png" style="height: 70px;visibility: hidden;">
 			<img id="kasteel" src=kasteel0.gif height="650px">
 			<script src="game.js"></script>
-
 				<button id=vorig style="visibility: hidden; float: left" onclick=naarvorig()> Groene deur </button>
-				<button id=volgend style="float: right; visibility: visible" onclick=naarvolgend()>Klik om te gaan starten </button>
+				<button id=volgend style="float: right; visibility: visible;" onclick=naarvolgend()>Klik om te gaan starten </button>
 				<button id=extra1 style="float:right; visibility: hidden;" onclick=naarextra1()> Gele deur </button>
 				<button id=extra2 style="float:left; visibility: hidden;" onclick=naarextra2()> Rode deur </button>
 		
 		</div>
 
 		<div id="inventory">
-			<img src="rugzak.jpg" height="150">
+			<img id=invrugzak  src="rugzak.jpg" height="150">
 			<img id=invuil ondblclick=uildbl() src="uil.jpg" height="150" style="visibility:hidden">
 			<img id=invsleutel ondblclick=sleuteldbl() src="sleutel.png" height="150" style="visibility:hidden">
+			<img id=invkaars ondblclick=kaarsdbl() src="kaars.png" height="150" style="visibility:hidden">
+			<img id=invmega ondblclick=megadbl() src="megafoon.png" height="150" style="visibility:hidden">
+			<img id=invmag ondblclick=magdbl() src="tijdschrift.png" height="150" style="visibility:hidden">
 		</div>
 	</body>
 </html>
