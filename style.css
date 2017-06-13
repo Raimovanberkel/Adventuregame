@@ -38,7 +38,7 @@ position: fixed;
     left: 1210px;
     top: 535px;
 
-    z-index: 1;
+    z-index: 134;
 }
 
 #kaars{
@@ -46,7 +46,7 @@ position: fixed;
     left: 770px;
     top: 645px;
 
-    z-index: 1;
+    z-index: 342;
 }
 
 #mega{
@@ -54,7 +54,7 @@ position: fixed;
     left: 850px;
     top: 400px;
 
-    z-index: 1;
+    z-index: 152342343;
 }
 
 #mag{
@@ -62,5 +62,90 @@ position: fixed;
     left: 1095px;
     top: 675px;
 
-    z-index: 1;
+    z-index: 164;
 }
+
+#pen{
+	    position: absolute;
+    left: 1095px;
+    top: 675px;
+
+    z-index: 198;
+}
+
+#papier{
+	    position: absolute;
+    left: 1095px;
+    top: 675px;
+
+    z-index: 145;
+}
+
+#taart{
+	    position: absolute;
+    left: 1240px;
+    top: 595px;
+
+    z-index: 154;
+}
+
+#ham{
+	    position: absolute;
+    left: 910px;
+    top: 680px;
+
+    z-index: 13;
+}
+
+#vuur{
+	position: absolute;
+    left: 715px;
+    top: 550px;
+
+    z-index: 15;}
+
+#ham1{
+	position: absolute;
+    left: 675px;
+    top: 665px;
+
+    z-index: 2665;}
+
+    #taart1{
+	position: absolute;
+    left: 815px;
+    top: 550px;
+
+    z-index: 24;}
+
+    .knop{
+    	height: 50px;
+
+    	background-color: darkblue ;
+    	color: white;
+    	z-index: 4567654;
+    }
+
+#lichtknop{
+		position: absolute;
+    left: 815px;
+    top: 550px;
+
+    z-index: 23456789098765434567894;}
+
+}
+
+    #raam1{
+	position: absolute;
+    left: 985px;
+    top: 505px;
+	width: 45px;
+	height: 140px; 
+    z-index: 26;}
+
+        #raam2{
+	position: absolute;
+    left: 800px;
+    top: 195px;
+	height: 200px; 
+    z-index: 2674575;}
