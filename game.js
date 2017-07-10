@@ -1,4 +1,4 @@
-	inhrugz=[true,false,true,true,false,true,true,true,true,true,true,true,true,true,true,true,true];
+inhrugz=[true,false,true,true,false,true,true,true,true,true,true,true,true,true,true,true,true];
 
 
 
@@ -92,7 +92,7 @@ actueellevel(level);
 
 function actueellevel()
 {
-console.log("actueellevel " + level);
+console.log("actueellevel s0 " + level);
 
 	if (level==null) {level=0;}	
 	if (level==-1) {level=0;}	
@@ -114,37 +114,49 @@ if (level==12 || level==14) {
 	document.getElementById("volgend").style.visibility="hidden";} else {document.getElementById("volgend").style.visibility="visible";
 }
 
+console.log("actueellevel s1 " + level);
 
 
 
 /*voorwerpen*/
-		if (level==1) {
+		if (level==1) 
+		{
 			if (inhrugz[1]==false) {
 				document.getElementById("sleutel").style.visibility="visible";
 			} else {
 				document.getElementById("sleutel").style.visibility="hidden";
 			}
-
 		document.getElementById("kaars").style.visibility="visible";
-		}else{
+		} else {
 		document.getElementById("sleutel").style.visibility="hidden";	
 		document.getElementById("kaars").style.visibility="hidden";}
 
-	if (level==2) {document.getElementById("mega").style.visibility="visible";}else{document.getElementById("mega").style.visibility="hidden";}
-	if (level==12) {document.getElementById("mag").style.visibility="visible";}else{document.getElementById("mag").style.visibility="hidden";}
-	if (level==4) {document.getElementById("pen").style.visibility="visible";}else{document.getElementById("pen").style.visibility="hidden";}
-	if (level==4) {document.getElementById("papier").style.visibility="visible";}else{document.getElementById("papier").style.visibility="hidden";}
-	if (level==10) {document.getElementById("taart").style.visibility="visible";}else{document.getElementById("taart").style.visibility="hidden";}
-	if (level==10) {document.getElementById("ham").style.visibility="visible";}else{document.getElementById("ham").style.visibility="hidden";}
-	if (level!==9){document.getElementById("vuur").style.visibility="hidden"}
-	if (level!==7){document.getElementById("ham1").style.visibility="hidden"}
-	if (level!==7){document.getElementById("taart1").style.visibility="hidden"}
-	if (level==1) {document.getElementById("raam1").style.visibility="visible";}else{document.getElementById("raam1").style.visibility="hidden";}
-	if (level==2) {document.getElementById("raam2").style.visibility="visible";}else{document.getElementById("raam2").style.visibility="hidden";}
-	if (level==12) {document.getElementById("lichtknop").style.visibility="visible";}else{document.getElementById("Lichtknop").style.visibility="hidden";}
+console.log("actueellevel s2 " + level);
+
+	if (level==2) {document.getElementById("mega").style.visibility="visible";} else {document.getElementById("mega").style.visibility="hidden";}
+	if (level==12) {document.getElementById("mag").style.visibility="visible";} else {document.getElementById("mag").style.visibility="hidden";}
+	if (level==4) {document.getElementById("pen").style.visibility="visible";} else {document.getElementById("pen").style.visibility="hidden";}
+	if (level==4) {document.getElementById("papier").style.visibility="visible";} else {document.getElementById("papier").style.visibility="hidden";}
+	if (level==10) {document.getElementById("taart").style.visibility="visible";} else {document.getElementById("taart").style.visibility="hidden";}
+	if (level==10) {document.getElementById("ham").style.visibility="visible";} else {document.getElementById("ham").style.visibility="hidden";}
+	if (level!==9) {document.getElementById("vuur").style.visibility="hidden";}
+	if (level!==7) 
+		{
+			document.getElementById("ham1").style.visibility="hidden";
+			document.getElementById("taart1").style.visibility="hidden";
+		}
+
+console.log("actueellevel s3 " + level);
+
+	if (level==1) {document.getElementById("raam1").style.visibility="visible";} else {document.getElementById("raam1").style.visibility="hidden";}
+	if (level==2) {document.getElementById("raam2").style.visibility="visible";} else {document.getElementById("raam2").style.visibility="hidden";}
+	if (level==12) {document.getElementById("lichtknop").style.visibility="visible";} else {document.getElementById("lichtknop").style.visibility="hidden";}
 	if (level==14) {
 		var audio = new Audio('skelet.mp3');
 		audio.play();}
+
+console.log("actueellevel s4 " + level);
+
 
 if (level==8) {
 		var audio = new Audio('trompet.mp3');
