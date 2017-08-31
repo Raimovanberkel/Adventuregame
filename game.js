@@ -50,6 +50,9 @@ function naarvorig()
 if (level==13) {
 	level=7;
 
+if (level==14) {
+	stop();
+}
 
 }
 
@@ -140,27 +143,34 @@ console.log("actueellevel s2 " + level);
 	if (level==10) {document.getElementById("taart").style.visibility="visible";} else {document.getElementById("taart").style.visibility="hidden";}
 	if (level==10) {document.getElementById("ham").style.visibility="visible";} else {document.getElementById("ham").style.visibility="hidden";}
 	if (level!==9) {document.getElementById("vuur").style.visibility="hidden";}
-	if (level!==7) 
-		{
-			document.getElementById("ham1").style.visibility="hidden";
-			document.getElementById("taart1").style.visibility="hidden";
-		}
+	if (level!==7) {document.getElementById("ham1").style.visibility="hidden"; document.getElementById("taart1").style.visibility="hidden";}
 
 console.log("actueellevel s3 " + level);
 
 	if (level==1) {document.getElementById("raam1").style.visibility="visible";} else {document.getElementById("raam1").style.visibility="hidden";}
 	if (level==2) {document.getElementById("raam2").style.visibility="visible";} else {document.getElementById("raam2").style.visibility="hidden";}
 	if (level==12) {document.getElementById("lichtknop").style.visibility="visible";} else {document.getElementById("lichtknop").style.visibility="hidden";}
-	if (level==14) {
-		var audio = new Audio('skelet.mp3');
-		audio.play();}
+	
+	console.log("actueellevel s4 " + level);
 
-console.log("actueellevel s4 " + level);
+
+var audio1 = new Audio('trompet.mp3');
+var audio2 = new Audio('skelet.mp3');
+
+function stop() {
+audio1.pause();
+audio2.pause();
+}
+
+if (level==14) {
+	audio2.play();
+}
 
 
 if (level==8) {
-		var audio = new Audio('trompet.mp3');
-		audio.play();}
+	audio1.play();
+}
+
 
 kamer = [
 		"Het Kasteel",
