@@ -50,10 +50,6 @@ function naarvorig()
 if (level==13) {
 	level=7;
 
-if (level==14) {
-	stop();
-}
-
 }
 
 console.log ("van  "+level);
@@ -84,8 +80,6 @@ function naarextra2 (){
 		if (level==6)
 			{level=11
 			}
-
-
 	}
 
 console.log ("naar extra "+level);
@@ -171,6 +165,9 @@ if (level==8) {
 	audio1.play();
 }
 
+if (level!==8 || 14) {
+	stop()
+}
 
 kamer = [
 		"Het Kasteel",

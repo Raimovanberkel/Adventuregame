@@ -16,13 +16,13 @@ margin-top: 0px;
 position: center;
 margin-top: 50px;
 margin-left: 450px;
-height: 450px;}
+height: 450px;
+z-index: 23456776543333456;}
 
 p{
 font-size: 20px;
 }
 
-h1{font-size: 20px;}
 
 #inventory{
 padding-top: 0px;
@@ -34,7 +34,7 @@ position: fixed;
 }
 
 #sleutel{
-	    position: absolute;
+        position: absolute;
     left: 1210px;
     top: 535px;
 
@@ -42,7 +42,7 @@ position: fixed;
 }
 
 #kaars{
-	    position: absolute;
+        position: absolute;
     left: 770px;
     top: 645px;
 
@@ -50,7 +50,7 @@ position: fixed;
 }
 
 #mega{
-	    position: absolute;
+        position: absolute;
     left: 850px;
     top: 400px;
 
@@ -58,7 +58,7 @@ position: fixed;
 }
 
 #mag{
-	    position: absolute;
+        position: absolute;
     left: 1095px;
     top: 675px;
 
@@ -66,7 +66,7 @@ position: fixed;
 }
 
 #pen{
-	    position: absolute;
+        position: absolute;
     left: 1095px;
     top: 675px;
 
@@ -74,7 +74,7 @@ position: fixed;
 }
 
 #papier{
-	    position: absolute;
+        position: absolute;
     left: 1095px;
     top: 675px;
 
@@ -82,7 +82,7 @@ position: fixed;
 }
 
 #taart{
-	    position: absolute;
+        position: absolute;
     left: 1240px;
     top: 595px;
 
@@ -90,7 +90,7 @@ position: fixed;
 }
 
 #ham{
-	    position: absolute;
+        position: absolute;
     left: 910px;
     top: 680px;
 
@@ -98,54 +98,52 @@ position: fixed;
 }
 
 #vuur{
-	position: absolute;
+    position: absolute;
     left: 715px;
     top: 550px;
 
     z-index: 15;}
 
 #ham1{
-	position: absolute;
+    position: absolute;
     left: 675px;
     top: 665px;
 
     z-index: 2665;}
 
     #taart1{
-	position: absolute;
+    position: absolute;
     left: 815px;
     top: 550px;
 
     z-index: 24;}
 
     .knop{
-    	height: 50px;
+        height: 50px;
 
-    	background-color: darkblue ;
-    	color: white;
-    	z-index: 4567654;
+        background-color: darkblue ;
+        color: white;
+        z-index: 4567654;
     }
 
 #lichtknop{
-		position: absolute;
+        position: absolute;
     left: 815px;
     top: 550px;
 
     z-index: 23456789098765434567894;}
 
-}
-
-    #raam1{
-	position: absolute;
+#raam1{
+    position: absolute;
     left: 985px;
     top: 505px;
-	width: 45px;
-	height: 140px; 
+    width: 45px;
+    height: 140px; 
     z-index: 26;}
 
-        #raam2{
-	position: absolute;
+#raam2{
+    position: absolute;
     left: 800px;
     top: 195px;
-	height: 200px; 
+    height: 200px; 
     z-index: 2674575;}
