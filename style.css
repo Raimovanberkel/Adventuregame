@@ -17,7 +17,7 @@ position: center;
 margin-top: 50px;
 margin-left: 450px;
 height: 450px;
-z-index: 23456776543333456;}
+z-index: 2345456;}
 
 p{
 font-size: 20px;
@@ -105,7 +105,9 @@ position: fixed;
     z-index: 15;}
 
 #ham1{
-    position: absolute;
+    position: absolute;0.
+
+
     left: 675px;
     top: 665px;
 
@@ -131,7 +133,7 @@ position: fixed;
     left: 815px;
     top: 550px;
 
-    z-index: 23456789098765434567894;}
+    z-index: 2367894;}
 
 #raam1{
     position: absolute;
